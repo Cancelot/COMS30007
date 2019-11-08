@@ -9,21 +9,25 @@ def posterior(a, b, X):
 
     return beta.pdf(mu_test, a_n, b_n), a_n, b_n
 
-
+# parameters to generate data
 mu = 0.2
 N = 100
 
+# generate some data
 X = np.random.binomial(1, mu, N)
 mu_test = np.linspace(0, 1, 100)
 
+# now lets define our prior
 a = 10
 b = 10
 
+# p(mu) = Beta(alpha, beta)
 prior_mean = a / (a + b)
 prior_mu = beta.pdf(mu_test, a, b)
 
 fig = plt.figure(figsize=(10, 5))
 ax = fig.add_subplot(211)
+
 ax.plot(mu_test, prior_mu, 'g')
 ax.fill_between(mu_test, prior_mu, color='green', alpha=0.3)
 
@@ -33,6 +37,8 @@ ax.set_ylabel('$p(\mu|\mathbf{x})$')
 dist_ax = fig.add_subplot(212)
 distances = np.zeros(X.shape[0])
 
+# lets pick a random (uniform) point from the data
+# and update our assumption with this
 index = np.random.permutation(X.shape[0])
 for i in range(0, X.shape[0]):
     y, a_n, b_n = posterior(a, b, X[:index[i]])
