@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import multivariate_normal
 
+
 def plot_line(axis, w):
     # input data
     X = np.zeros((2, 2))
@@ -32,7 +33,6 @@ def plot_distribution(ax, mu, sigma):
 
 # create prior distribution
 tau = 1.0 * np.eye(2)
-tau_inv = np.linalg.inv(tau)
 w_0 = np.zeros((2, 1))
 
 # sample from prior
@@ -42,7 +42,7 @@ w_samp = np.random.multivariate_normal(w_0.flatten(), tau, size=n_samples)
 
 # create plot
 fig = plt.figure(figsize=(10, 5))
-ax = fig.add_subplot(121)
+ax = fig.add_subplot(131)
 
 
 for i in range(0, w_samp.shape[0]):
@@ -59,18 +59,38 @@ w = np.array([-1.3, 0.5])
 
 Y = w.dot(X.T) + error
 
-ax1 = fig.add_subplot(122)
+ax1 = fig.add_subplot(132)
 
 plot_distribution(ax1, w_0, tau)
 
-index = np.random.permutation(X.shape[0])
-for i in range(0, index.shape[0]):
-    X_i = X[index, :]
-    Y_i = Y[index].reshape(201, 1)
 
-    mean = np.linalg.inv(tau_inv + beta * X_i.T.dot(X_i)).dot(tau_inv.dot(w_0) + beta * X_i.T.dot(Y_i))
-    variance = np.linalg.inv(tau_inv + beta * X_i.T.dot(X_i))
-    plot_distribution(ax1, mean, variance)
+def posterior(tau, beta, X, Y):
+    tau_inv = np.linalg.inv(tau)
+    index = np.random.permutation(X.shape[0])
+    for i in range(0, index.shape[0]):
+        X_i = X[index, :]
+        Y_i = Y[index].reshape(201, 1)
+
+        mean = np.linalg.inv(tau_inv + beta * X_i.T.dot(X_i)).dot(tau_inv.dot(w_0) + beta * X_i.T.dot(Y_i))
+        variance = np.linalg.inv(tau_inv + beta * X_i.T.dot(X_i))
+        plot_distribution(ax1, mean, variance)
+
+    return mean, variance
+
+
+def predictive_posterior(S0, beta, x_star, X, y):
+    mN, SN = posterior(S0, beta, X, y)
+
+    m_star = mN.T.dot(x_star)
+    S_star = 1.0/beta + x_star.T.dot(SN).dot(x_star)
+
+    return m_star, S_star
+
+
+x_star = np.linspace(-6, 6, 2)
+ax2 = fig.add_subplot(133)
+mean, variance = predictive_posterior(tau, beta, x_star, X, Y)
+plot_distribution(ax2, mean, variance)
 
 plt.tight_layout()
 plt.show()
