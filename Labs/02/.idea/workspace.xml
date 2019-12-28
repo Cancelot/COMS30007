@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fa648aa-0ec2-406d-a969-e57851b8d44e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.idea/01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.idea/dictionaries/cancelot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/arithmetic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/boolean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/cholesky.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/distribution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/indexing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/linalg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/matplot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/posterior.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_python.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_distributions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_linear_regression.pdf" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1S3OFpTKhe30tbIJUA1dnJqfEdh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../03" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="posterior" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="02" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/posterior.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.posterior" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fa648aa-0ec2-406d-a969-e57851b8d44e" name="Default Changelist" comment="" />
+      <created>1570788711487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570788711487</updated>
+      <workItem from="1570788713304" duration="2961000" />
+      <workItem from="1570792453689" duration="864000" />
+      <workItem from="1570793390232" duration="44000" />
+      <workItem from="1570793572009" duration="1059000" />
+      <workItem from="1571393615448" duration="25000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/02$posterior.coverage" NAME="posterior Coverage Results" MODIFIED="1570792593727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
