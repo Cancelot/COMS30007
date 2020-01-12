@@ -74,6 +74,8 @@ def plot_figs():
 
     plt.show()
 
+plot_figs()
+
 
 N = 5
 x = np.linspace(-3.1, 3, N)
