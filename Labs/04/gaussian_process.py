@@ -74,6 +74,7 @@ def plot_figs():
 
     plt.show()
 
+
 plot_figs()
 
 
